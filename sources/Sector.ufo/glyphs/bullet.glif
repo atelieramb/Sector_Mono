@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bullet" format="2">
+	<advance width="700"/>
+	<unicode hex="2022"/>
+	<outline>
+		<component base="period" xScale="2" yScale="2" xOffset="-400" yOffset="237"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2020-12-10 18:08:18 +0000</string>
+		</dict>
+	</lib>
+</glyph>

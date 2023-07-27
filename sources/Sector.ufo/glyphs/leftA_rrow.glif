@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="leftArrow" format="2">
+	<advance width="700"/>
+	<unicode hex="2190"/>
+	<outline>
+		<component base="upArrow" xScale="0" xyScale="-1" yScale="0" yxScale="-1" xOffset="632" yOffset="637"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2020-12-28 12:23:05 +0000</string>
+		</dict>
+	</lib>
+</glyph>

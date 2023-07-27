@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Germandbls" format="2">
+	<advance width="1400"/>
+	<unicode hex="1E9E"/>
+	<outline>
+		<component base="S" xOffset="700"/>
+		<component base="S"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2020-12-17 14:30:44 +0000</string>
+		</dict>
+	</lib>
+</glyph>

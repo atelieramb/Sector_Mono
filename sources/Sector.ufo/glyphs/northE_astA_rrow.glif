@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="northEastArrow" format="2">
+	<advance width="700"/>
+	<unicode hex="2197"/>
+	<outline>
+		<component base="upArrow" xScale="-0.7071" xyScale="0.7071" yScale="0.7071" yxScale="0.7071" xOffset="378" yOffset="-166"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2020-12-28 12:22:51 +0000</string>
+		</dict>
+	</lib>
+</glyph>

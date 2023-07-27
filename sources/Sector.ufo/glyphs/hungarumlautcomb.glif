@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hungarumlautcomb" format="2">
+	<advance width="600"/>
+	<unicode hex="030B"/>
+	<outline>
+		<component base="acute" yOffset="158"/>
+		<component base="acute" xOffset="-190" yOffset="158"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-06-12 14:04:24 +0000</string>
+			<key>public.markColor</key>
+			<string>0,0.2,0.88,1</string>
+		</dict>
+	</lib>
+</glyph>

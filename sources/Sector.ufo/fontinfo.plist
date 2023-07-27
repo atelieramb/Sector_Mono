@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ascender</key>
+	<integer>680</integer>
+	<key>capHeight</key>
+	<integer>680</integer>
+	<key>copyright</key>
+	<string>Created in 2020 for Juan Arturo García, updated in 2022. SIL Open Font License.</string>
+	<key>descender</key>
+	<integer>-240</integer>
+	<key>familyName</key>
+	<string>Sector</string>
+	<key>guidelines</key>
+	<array>
+		<dict>
+			<key>angle</key>
+			<integer>0</integer>
+			<key>x</key>
+			<integer>428</integer>
+			<key>y</key>
+			<integer>-89</integer>
+		</dict>
+		<dict>
+			<key>angle</key>
+			<integer>0</integer>
+			<key>x</key>
+			<integer>409</integer>
+			<key>y</key>
+			<integer>720</integer>
+		</dict>
+		<dict>
+			<key>angle</key>
+			<integer>0</integer>
+			<key>x</key>
+			<integer>301</integer>
+			<key>y</key>
+			<integer>680</integer>
+		</dict>
+		<dict>
+			<key>angle</key>
+			<integer>0</integer>
+			<key>x</key>
+			<integer>301</integer>
+			<key>y</key>
+			<integer>570</integer>
+		</dict>
+		<dict>
+			<key>angle</key>
+			<integer>0</integer>
+			<key>x</key>
+			<integer>563</integer>
+			<key>y</key>
+			<integer>350</integer>
+		</dict>
+	</array>
+	<key>openTypeHeadCreated</key>
+	<string>2022/12/12 10:24:24</string>
+	<key>openTypeNameDesigner</key>
+	<string>Mateo Broillet</string>
+	<key>openTypeNameDesignerURL</key>
+	<string>www.mateobroillet.ch</string>
+	<key>openTypeNameManufacturer</key>
+	<string>Atelier AMB, Mateo Broillet</string>
+	<key>openTypeNameManufacturerURL</key>
+	<string>www.mateobroillet.ch</string>
+	<key>openTypeNamePreferredSubfamilyName</key>
+	<string>Mono</string>
+	<key>openTypeOS2WeightClass</key>
+	<integer>400</integer>
+	<key>openTypeOS2WidthClass</key>
+	<integer>5</integer>
+	<key>postscriptBlueValues</key>
+	<array>
+		<real>-16.0</real>
+		<real>0.0</real>
+		<real>520.0</real>
+		<real>536.0</real>
+		<real>680.0</real>
+		<real>696.0</real>
+	</array>
+	<key>postscriptFontName</key>
+	<string>Sector-Mono</string>
+	<key>postscriptOtherBlues</key>
+	<array>
+		<real>-256.0</real>
+		<real>-240.0</real>
+	</array>
+	<key>styleMapFamilyName</key>
+	<string>Sector Mono</string>
+	<key>styleMapStyleName</key>
+	<string>regular</string>
+	<key>styleName</key>
+	<string>Mono</string>
+	<key>unitsPerEm</key>
+	<integer>1000</integer>
+	<key>versionMajor</key>
+	<integer>1</integer>
+	<key>versionMinor</key>
+	<integer>0</integer>
+	<key>xHeight</key>
+	<integer>520</integer>
+</dict>
+</plist>

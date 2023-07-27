@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aogonek" format="2">
+	<advance width="700"/>
+	<unicode hex="0105"/>
+	<guideline x="495" y="55" angle="90"/>
+	<guideline x="125" y="80" angle="90"/>
+	<guideline x="324" y="54" angle="90"/>
+	<guideline x="479" y="87" angle="90"/>
+	<outline>
+		<component base="a"/>
+		<component base="ogonek" xOffset="130"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-06-12 14:05:46 +0000</string>
+			<key>public.markColor</key>
+			<string>0.97,0.9,0,1</string>
+		</dict>
+	</lib>
+</glyph>
