@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✅ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>15</td>
+                <td>10</td>
+                <td>131</td>
+                <td>7</td>
+                <td>83</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>8%</td>
+                <td>5%</td>
+                <td>69%</td>
+                <td>4%</td>
+                <td>44%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Google Fonts&gt; 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 fsType does not impose restrictions.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/fstype&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>In this font fsType is set to 8 meaning that:
+The font may be embedded but must only be installed temporarily on other systems.</p>
+<p>No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]</p>
+</span></li></ul></div></details>
+<h3>Checking OS/2 achVendID.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/vendor_id&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+[code: unknown]</p>
+</span></li></ul></div></details>
+<h3>Check Google Fonts glyph coverage.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/glyph_coverage&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
+<pre><code>- 0x00A0 (NO-BREAK SPACE)
+
+
+- 0x010A (LATIN CAPITAL LETTER C WITH DOT ABOVE)
+
+
+- 0x011E (LATIN CAPITAL LETTER G WITH BREVE)
+
+
+- 0x0120 (LATIN CAPITAL LETTER G WITH DOT ABOVE)
+
+
+- 0x0126 (LATIN CAPITAL LETTER H WITH STROKE)
+
+
+- 0x0132 (LATIN CAPITAL LIGATURE IJ)
+
+
+- 0x0130 (LATIN CAPITAL LETTER I WITH DOT ABOVE)
+
+
+- 0x014A (LATIN CAPITAL LETTER ENG)
+
+
+- 0x0218 (LATIN CAPITAL LETTER S WITH COMMA BELOW)
+
+
+- 0x021A (LATIN CAPITAL LETTER T WITH COMMA BELOW)
+
+
+- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
+
+
+- 0x010B (LATIN SMALL LETTER C WITH DOT ABOVE)
+
+
+- 0x00F0 (LATIN SMALL LETTER ETH)
+
+
+- 0x011F (LATIN SMALL LETTER G WITH BREVE)
+
+
+- 0x0121 (LATIN SMALL LETTER G WITH DOT ABOVE)
+
+
+- 0x0127 (LATIN SMALL LETTER H WITH STROKE)
+
+
+- 0x0133 (LATIN SMALL LIGATURE IJ)
+
+
+- 0x0237 (LATIN SMALL LETTER DOTLESS J)
+
+
+- 0x014B (LATIN SMALL LETTER ENG)
+
+
+- 0x0219 (LATIN SMALL LETTER S WITH COMMA BELOW)
+
+
+- 0x00DF (LATIN SMALL LETTER SHARP S)
+
+
+- 0x021B (LATIN SMALL LETTER T WITH COMMA BELOW)
+
+
+- 0x016D (LATIN SMALL LETTER U WITH BREVE)
+
+
+- 0x00AA (FEMININE ORDINAL INDICATOR)
+
+
+- 0x00BA (MASCULINE ORDINAL INDICATOR)
+</code></pre>
+<p>[code: missing-codepoints]</p>
+</span></li></ul></div></details>
+<h3>Check license file has good copyright string.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/license/OFL_copyright&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>First line in license file is:</p>
+<p>&quot;this font software is licensed under the sil open font license, version 1.1.&quot;</p>
+<p>which does not match the expected format, similar to:</p>
+<p>&quot;Copyright 2022 The Familyname Project Authors (git url)&quot; [code: bad-format]</p>
+</span></li></ul></div></details>
+<h3>Check OFL body text is correct.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/license/OFL_body_text&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The OFL.txt body text is incorrect. Please use https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You should only modify the first line. [code: incorrect-ofl-body-text]</p>
+</span></li></ul></div></details>
+<h3>Check copyright namerecords match license file.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/license&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]</p>
+</span></li></ul></div></details>
+<h3>Are there non-ASCII characters in ASCII-only NAME table entries?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/ascii_only_entries&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Bad string at [nameID 0, 'utf_16_be']: 'b'Created in 2020 for Juan Arturo García, updated in 2022. SIL Open Font License.'' [code: bad-string]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>There are 1 strings containing non-ASCII characters in the ASCII-only NAME table entries. [code: non-ascii-strings]</p>
+</span></li></ul></div></details>
+<h3>Copyright notices match canonical pattern in fonts</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/font_copyright&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name Table entry: Copyright notices should match a pattern similar to: &quot;Copyright 2019 The Familyname Project Authors (git url)&quot;
+But instead we have got:
+&quot;Created in 2020 for Juan Arturo García, updated in 2022. SIL Open Font License.&quot; [code: bad-notice-format]</p>
+</span></li></ul></div></details>
+<h3>Check font names are correct</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/font_names&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Font names are incorrect:</p>
+<p>| nameID | current | expected |
+| :--- | :--- | :--- |
+| Family Name | Sector Normal | Sector Normal |
+| Subfamily Name | Regular | Regular |
+| Full Name | Sector Normal | Sector Normal Regular |
+| Poscript Name | Sector-Normal | SectorNormal-Regular |
+| Typographic Family Name | Sector | N/A |
+| Typographic Subfamily Name | Normal | N/A | [code: bad-names]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Regular missing from full name [code: lacks-regular]</p>
+</span></li></ul></div></details>
+<h3>Check font follows the Google Fonts vertical metric schema</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/vertical_metrics&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoLineGap is &quot;280&quot; it should be 0 [code: bad-OS/2.sTypoLineGap]</p>
+</span></li></ul></div></details>
+<h3>Ensure Stylistic Sets have description.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/stylisticset_description&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The stylistic set ss01 lacks a description string on the 'name' table. [code: missing-description]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]</p>
+</span></li></ul></div></details>
+<h3>OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/os2/use_typo_metrics&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Sector-Normal.ttf']. [code: missing-os2-fsselection-bit7]</p>
+</span></li></ul></div></details>
+<h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/meta/script_lang_tags&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; 🔥🔥🔥🔥⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 262, but got 240 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h3>Checking OS/2 Metrics match hhea Metrics.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/os2_metrics_match_hhea&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2 sTypoAscender (680) and hhea ascent (960) must be equal. [code: ascender]</p>
+</span></li></ul></div></details>
+<h3>Font contains glyphs for whitespace characters?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_glyphs&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Whitespace glyph missing for codepoint 0x00A0. [code: missing-whitespace-glyph-0x00A0]</p>
+</span></li></ul></div></details>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:</p>
+<pre><code>- uni030C.alt
+</code></pre>
+<p>[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h3>Check if each glyph has the recommended amount of contours.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/contour_count&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: asterisk	Contours detected: 2	Expected: 1 or 4
+
+- Glyph name: W	Contours detected: 4	Expected: 1 or 2
+
+- Glyph name: v	Contours detected: 2	Expected: 1
+
+- Glyph name: w	Contours detected: 4	Expected: 1
+
+- Glyph name: braceleft	Contours detected: 2	Expected: 1
+
+- Glyph name: braceright	Contours detected: 2	Expected: 1
+
+- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+- Glyph name: Wcircumflex	Contours detected: 5	Expected: 2
+
+- Glyph name: wcircumflex	Contours detected: 5	Expected: 2
+
+- Glyph name: Wgrave	Contours detected: 5	Expected: 2
+
+- Glyph name: wgrave	Contours detected: 5	Expected: 2
+
+- Glyph name: Wacute	Contours detected: 5	Expected: 2
+
+- Glyph name: wacute	Contours detected: 5	Expected: 2
+
+- Glyph name: Wdieresis	Contours detected: 6	Expected: 3
+
+- Glyph name: wdieresis	Contours detected: 6	Expected: 3
+
+- Glyph name: uni1E9E	Contours detected: 2	Expected: 1
+
+- Glyph name: arrowboth	Contours detected: 2	Expected: 1
+
+- Glyph name: arrowupdn	Contours detected: 2	Expected: 1
+
+- Glyph name: infinity	Contours detected: 4	Expected: 3
+
+- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+- Glyph name: W	Contours detected: 4	Expected: 1 or 2
+
+- Glyph name: Wacute	Contours detected: 5	Expected: 2
+
+- Glyph name: Wcircumflex	Contours detected: 5	Expected: 2
+
+- Glyph name: Wdieresis	Contours detected: 6	Expected: 3
+
+- Glyph name: Wgrave	Contours detected: 5	Expected: 2
+
+- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: arrowboth	Contours detected: 2	Expected: 1
+
+- Glyph name: arrowupdn	Contours detected: 2	Expected: 1
+
+- Glyph name: asterisk	Contours detected: 2	Expected: 1 or 4
+
+- Glyph name: braceleft	Contours detected: 2	Expected: 1
+
+- Glyph name: braceright	Contours detected: 2	Expected: 1
+
+- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: infinity	Contours detected: 4	Expected: 3
+
+- Glyph name: uni1E9E	Contours detected: 2	Expected: 1
+
+- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+- Glyph name: v	Contours detected: 2	Expected: 1
+
+- Glyph name: w	Contours detected: 4	Expected: 1
+
+- Glyph name: wacute	Contours detected: 5	Expected: 2
+
+- Glyph name: wcircumflex	Contours detected: 5	Expected: 2
+
+- Glyph name: wdieresis	Contours detected: 6	Expected: 3 
+
+- Glyph name: wgrave	Contours detected: 5	Expected: 2
+</code></pre>
+<p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<h3>Ensure dotted circle glyph is present and can attach marks.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/dotted_circle&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>No dotted circle glyph present [code: missing-dotted-circle]</p>
+</span></li></ul></div></details>
+<h3>Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/soft_dotted&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The dot of soft dotted characters used in orthographies must disappear in the following strings: i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌</p>
+<p>The dot of soft dotted characters should disappear in other cases, for example: ĭ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĭ̧ i̧̋ ǐ̧ i̧̒ ĵ j̆ j̇ j̊ j̋ ǰ [code: soft-dotted]</p>
+</span></li></ul></div></details>
+<h3>Checking Vertical Metric Linegaps.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/linegaps&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 sTypoLineGap is not equal to 0. [code: OS/2]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.name&gt; 🔥⏩⏩</h2>
+<h3>Checking correctness of monospaced metadata.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/monospace&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 329 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Font is monospaced but 2 glyphs (0.59%) have a different width. You should check the widths of: ['uni1E9E', 'trademark'] [code: mono-outliers]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️</h2>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:</p>
+<pre><code>* asciicircum (U+005E): L&lt;&lt;389.0,663.0&gt;--&lt;389.0,663.0&gt;&gt; -&gt; L&lt;&lt;389.0,663.0&gt;--&lt;389.0,663.0&gt;&gt; [code: found-colinear-vectors]
+</code></pre>
+</span></li></ul></div></details>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/Sector-Normal.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:</p>
+<pre><code>* Aring (U+00C5): B&lt;&lt;339.0,858.0&gt;-&lt;348.0,849.0&gt;-&lt;349.0,837.0&gt;&gt;/B&lt;&lt;349.0,837.0&gt;-&lt;350.0,849.0&gt;-&lt;359.0,858.0&gt;&gt; = 9.527283381452328
+
+* Aring (U+00C5): B&lt;&lt;341.0,777.0&gt;-&lt;350.0,768.0&gt;-&lt;351.0,756.0&gt;&gt;/B&lt;&lt;351.0,756.0&gt;-&lt;352.0,768.0&gt;-&lt;361.0,777.0&gt;&gt; = 9.527283381452328
+
+* Aring (U+00C5): B&lt;&lt;359.0,811.0&gt;-&lt;350.0,820.0&gt;-&lt;349.0,832.0&gt;&gt;/B&lt;&lt;349.0,832.0&gt;-&lt;348.0,820.0&gt;-&lt;339.0,811.0&gt;&gt; = 9.527283381452328
+
+* Aring (U+00C5): B&lt;&lt;361.0,730.0&gt;-&lt;352.0,739.0&gt;-&lt;351.0,751.0&gt;&gt;/B&lt;&lt;351.0,751.0&gt;-&lt;350.0,739.0&gt;-&lt;341.0,730.0&gt;&gt; = 9.527283381452328
+
+* Uring (U+016E): B&lt;&lt;339.0,858.0&gt;-&lt;348.0,849.0&gt;-&lt;349.0,837.0&gt;&gt;/B&lt;&lt;349.0,837.0&gt;-&lt;350.0,849.0&gt;-&lt;359.0,858.0&gt;&gt; = 9.527283381452328
+
+* Uring (U+016E): B&lt;&lt;341.0,777.0&gt;-&lt;350.0,768.0&gt;-&lt;351.0,756.0&gt;&gt;/B&lt;&lt;351.0,756.0&gt;-&lt;352.0,768.0&gt;-&lt;361.0,777.0&gt;&gt; = 9.527283381452328
+
+* Uring (U+016E): B&lt;&lt;359.0,811.0&gt;-&lt;350.0,820.0&gt;-&lt;349.0,832.0&gt;&gt;/B&lt;&lt;349.0,832.0&gt;-&lt;348.0,820.0&gt;-&lt;339.0,811.0&gt;&gt; = 9.527283381452328
+
+* Uring (U+016E): B&lt;&lt;361.0,730.0&gt;-&lt;352.0,739.0&gt;-&lt;351.0,751.0&gt;&gt;/B&lt;&lt;351.0,751.0&gt;-&lt;350.0,739.0&gt;-&lt;341.0,730.0&gt;&gt; = 9.527283381452328
+
+* W (U+0057): B&lt;&lt;342.0,411.0&gt;-&lt;349.0,398.0&gt;-&lt;348.0,384.0&gt;&gt;/B&lt;&lt;348.0,384.0&gt;-&lt;348.0,397.0&gt;-&lt;355.0,410.0&gt;&gt; = 4.085616779974799
+
+* W (U+0057): B&lt;&lt;349.0,377.0&gt;-&lt;349.0,380.0&gt;-&lt;348.0,384.0&gt;&gt;/L&lt;&lt;348.0,384.0&gt;--&lt;348.0,378.0&gt;&gt; = 14.036243467926484
+
+* W (U+0057): B&lt;&lt;445.0,55.0&gt;-&lt;445.0,82.0&gt;-&lt;464.0,98.0&gt;&gt;/L&lt;&lt;464.0,98.0&gt;--&lt;462.0,97.0&gt;&gt; = 13.53585636913422
+
+* Wacute (U+1E82): B&lt;&lt;342.0,411.0&gt;-&lt;349.0,398.0&gt;-&lt;348.0,384.0&gt;&gt;/B&lt;&lt;348.0,384.0&gt;-&lt;348.0,397.0&gt;-&lt;355.0,410.0&gt;&gt; = 4.085616779974799
+
+* Wacute (U+1E82): B&lt;&lt;349.0,377.0&gt;-&lt;349.0,380.0&gt;-&lt;348.0,384.0&gt;&gt;/L&lt;&lt;348.0,384.0&gt;--&lt;348.0,378.0&gt;&gt; = 14.036243467926484
+
+* Wacute (U+1E82): B&lt;&lt;445.0,55.0&gt;-&lt;445.0,82.0&gt;-&lt;464.0,98.0&gt;&gt;/L&lt;&lt;464.0,98.0&gt;--&lt;462.0,97.0&gt;&gt; = 13.53585636913422
+
+* Wcircumflex (U+0174): B&lt;&lt;342.0,411.0&gt;-&lt;349.0,398.0&gt;-&lt;348.0,384.0&gt;&gt;/B&lt;&lt;348.0,384.0&gt;-&lt;348.0,397.0&gt;-&lt;355.0,410.0&gt;&gt; = 4.085616779974799
+
+* Wcircumflex (U+0174): B&lt;&lt;349.0,377.0&gt;-&lt;349.0,380.0&gt;-&lt;348.0,384.0&gt;&gt;/L&lt;&lt;348.0,384.0&gt;--&lt;348.0,378.0&gt;&gt; = 14.036243467926484
+
+* Wcircumflex (U+0174): B&lt;&lt;445.0,55.0&gt;-&lt;445.0,82.0&gt;-&lt;464.0,98.0&gt;&gt;/L&lt;&lt;464.0,98.0&gt;--&lt;462.0,97.0&gt;&gt; = 13.53585636913422
+
+* Wdieresis (U+1E84): B&lt;&lt;342.0,411.0&gt;-&lt;349.0,398.0&gt;-&lt;348.0,384.0&gt;&gt;/B&lt;&lt;348.0,384.0&gt;-&lt;348.0,397.0&gt;-&lt;355.0,410.0&gt;&gt; = 4.085616779974799
+
+* Wdieresis (U+1E84): B&lt;&lt;349.0,377.0&gt;-&lt;349.0,380.0&gt;-&lt;348.0,384.0&gt;&gt;/L&lt;&lt;348.0,384.0&gt;--&lt;348.0,378.0&gt;&gt; = 14.036243467926484
+
+* Wdieresis (U+1E84): B&lt;&lt;445.0,55.0&gt;-&lt;445.0,82.0&gt;-&lt;464.0,98.0&gt;&gt;/L&lt;&lt;464.0,98.0&gt;--&lt;462.0,97.0&gt;&gt; = 13.53585636913422
+
+* Wgrave (U+1E80): B&lt;&lt;342.0,411.0&gt;-&lt;349.0,398.0&gt;-&lt;348.0,384.0&gt;&gt;/B&lt;&lt;348.0,384.0&gt;-&lt;348.0,397.0&gt;-&lt;355.0,410.0&gt;&gt; = 4.085616779974799
+
+* Wgrave (U+1E80): B&lt;&lt;349.0,377.0&gt;-&lt;349.0,380.0&gt;-&lt;348.0,384.0&gt;&gt;/L&lt;&lt;348.0,384.0&gt;--&lt;348.0,378.0&gt;&gt; = 14.036243467926484
+
+* Wgrave (U+1E80): B&lt;&lt;445.0,55.0&gt;-&lt;445.0,82.0&gt;-&lt;464.0,98.0&gt;&gt;/L&lt;&lt;464.0,98.0&gt;--&lt;462.0,97.0&gt;&gt; = 13.53585636913422
+
+* Z (U+005A): B&lt;&lt;208.0,124.0&gt;-&lt;196.0,110.0&gt;-&lt;177.0,106.0&gt;&gt;/B&lt;&lt;177.0,106.0&gt;-&lt;180.0,106.0&gt;-&lt;184.0,105.0&gt;&gt; = 11.888658039627968
+
+* Zacute (U+0179): B&lt;&lt;208.0,124.0&gt;-&lt;196.0,110.0&gt;-&lt;177.0,106.0&gt;&gt;/B&lt;&lt;177.0,106.0&gt;-&lt;180.0,106.0&gt;-&lt;184.0,105.0&gt;&gt; = 11.888658039627968
+
+* Zcaron (U+017D): B&lt;&lt;208.0,124.0&gt;-&lt;196.0,110.0&gt;-&lt;177.0,106.0&gt;&gt;/B&lt;&lt;177.0,106.0&gt;-&lt;180.0,106.0&gt;-&lt;184.0,105.0&gt;&gt; = 11.888658039627968
+
+* Zdotaccent (U+017B): B&lt;&lt;208.0,124.0&gt;-&lt;196.0,110.0&gt;-&lt;177.0,106.0&gt;&gt;/B&lt;&lt;177.0,106.0&gt;-&lt;180.0,106.0&gt;-&lt;184.0,105.0&gt;&gt; = 11.888658039627968
+
+* aring (U+00E5): B&lt;&lt;339.0,672.0&gt;-&lt;348.0,663.0&gt;-&lt;349.0,651.0&gt;&gt;/B&lt;&lt;349.0,651.0&gt;-&lt;350.0,663.0&gt;-&lt;359.0,672.0&gt;&gt; = 9.527283381452328
+
+* aring (U+00E5): B&lt;&lt;341.0,591.0&gt;-&lt;350.0,582.0&gt;-&lt;351.0,570.0&gt;&gt;/B&lt;&lt;351.0,570.0&gt;-&lt;352.0,582.0&gt;-&lt;361.0,591.0&gt;&gt; = 9.527283381452328
+
+* aring (U+00E5): B&lt;&lt;359.0,625.0&gt;-&lt;350.0,634.0&gt;-&lt;349.0,646.0&gt;&gt;/B&lt;&lt;349.0,646.0&gt;-&lt;348.0,634.0&gt;-&lt;339.0,625.0&gt;&gt; = 9.527283381452328
+
+* aring (U+00E5): B&lt;&lt;361.0,544.0&gt;-&lt;352.0,553.0&gt;-&lt;351.0,565.0&gt;&gt;/B&lt;&lt;351.0,565.0&gt;-&lt;350.0,553.0&gt;-&lt;341.0,544.0&gt;&gt; = 9.527283381452328
+
+* ring (U+02DA): B&lt;&lt;339.0,672.0&gt;-&lt;348.0,663.0&gt;-&lt;349.0,651.0&gt;&gt;/B&lt;&lt;349.0,651.0&gt;-&lt;350.0,663.0&gt;-&lt;359.0,672.0&gt;&gt; = 9.527283381452328
+
+* ring (U+02DA): B&lt;&lt;341.0,591.0&gt;-&lt;350.0,582.0&gt;-&lt;351.0,570.0&gt;&gt;/B&lt;&lt;351.0,570.0&gt;-&lt;352.0,582.0&gt;-&lt;361.0,591.0&gt;&gt; = 9.527283381452328
+
+* ring (U+02DA): B&lt;&lt;359.0,625.0&gt;-&lt;350.0,634.0&gt;-&lt;349.0,646.0&gt;&gt;/B&lt;&lt;349.0,646.0&gt;-&lt;348.0,634.0&gt;-&lt;339.0,625.0&gt;&gt; = 9.527283381452328
+
+* ring (U+02DA): B&lt;&lt;361.0,544.0&gt;-&lt;352.0,553.0&gt;-&lt;351.0,565.0&gt;&gt;/B&lt;&lt;351.0,565.0&gt;-&lt;350.0,553.0&gt;-&lt;341.0,544.0&gt;&gt; = 9.527283381452328
+
+* uni030A (U+030A): B&lt;&lt;339.0,858.0&gt;-&lt;348.0,849.0&gt;-&lt;349.0,837.0&gt;&gt;/B&lt;&lt;349.0,837.0&gt;-&lt;350.0,849.0&gt;-&lt;359.0,858.0&gt;&gt; = 9.527283381452328
+
+* uni030A (U+030A): B&lt;&lt;341.0,777.0&gt;-&lt;350.0,768.0&gt;-&lt;351.0,756.0&gt;&gt;/B&lt;&lt;351.0,756.0&gt;-&lt;352.0,768.0&gt;-&lt;361.0,777.0&gt;&gt; = 9.527283381452328
+
+* uni030A (U+030A): B&lt;&lt;359.0,811.0&gt;-&lt;350.0,820.0&gt;-&lt;349.0,832.0&gt;&gt;/B&lt;&lt;349.0,832.0&gt;-&lt;348.0,820.0&gt;-&lt;339.0,811.0&gt;&gt; = 9.527283381452328
+
+* uni030A (U+030A): B&lt;&lt;361.0,730.0&gt;-&lt;352.0,739.0&gt;-&lt;351.0,751.0&gt;&gt;/B&lt;&lt;351.0,751.0&gt;-&lt;350.0,739.0&gt;-&lt;341.0,730.0&gt;&gt; = 9.527283381452328
+
+* uring (U+016F): B&lt;&lt;339.0,708.0&gt;-&lt;348.0,699.0&gt;-&lt;349.0,687.0&gt;&gt;/B&lt;&lt;349.0,687.0&gt;-&lt;350.0,699.0&gt;-&lt;359.0,708.0&gt;&gt; = 9.527283381452328
+
+* uring (U+016F): B&lt;&lt;341.0,627.0&gt;-&lt;350.0,618.0&gt;-&lt;351.0,606.0&gt;&gt;/B&lt;&lt;351.0,606.0&gt;-&lt;352.0,618.0&gt;-&lt;361.0,627.0&gt;&gt; = 9.527283381452328
+
+* uring (U+016F): B&lt;&lt;359.0,661.0&gt;-&lt;350.0,670.0&gt;-&lt;349.0,682.0&gt;&gt;/B&lt;&lt;349.0,682.0&gt;-&lt;348.0,670.0&gt;-&lt;339.0,661.0&gt;&gt; = 9.527283381452328
+
+* uring (U+016F): B&lt;&lt;361.0,580.0&gt;-&lt;352.0,589.0&gt;-&lt;351.0,601.0&gt;&gt;/B&lt;&lt;351.0,601.0&gt;-&lt;350.0,589.0&gt;-&lt;341.0,580.0&gt;&gt; = 9.527283381452328
+
+* v (U+0076): B&lt;&lt;207.0,410.0&gt;-&lt;195.0,410.0&gt;-&lt;174.0,414.0&gt;&gt;/B&lt;&lt;174.0,414.0&gt;-&lt;193.0,408.0&gt;-&lt;202.0,392.0&gt;&gt; = 6.741270506160247
+
+* v (U+0076): B&lt;&lt;246.5,283.5&gt;-&lt;241.0,263.0&gt;-&lt;223.0,253.0&gt;&gt;/B&lt;&lt;223.0,253.0&gt;-&lt;241.0,264.0&gt;-&lt;261.5,259.0&gt;&gt; = 2.374961515761332
+
+* v (U+0076): B&lt;&lt;411.5,259.0&gt;-&lt;432.0,264.0&gt;-&lt;450.0,253.0&gt;&gt;/B&lt;&lt;450.0,253.0&gt;-&lt;431.0,263.0&gt;-&lt;426.0,283.5&gt;&gt; = 3.6710250137784786
+
+* v (U+0076): B&lt;&lt;470.0,392.0&gt;-&lt;479.0,407.0&gt;-&lt;496.0,413.0&gt;&gt;/B&lt;&lt;496.0,413.0&gt;-&lt;478.0,410.0&gt;-&lt;467.0,410.0&gt;&gt; = 9.97771262015058
+
+* w (U+0077): B&lt;&lt;285.0,411.5&gt;-&lt;300.0,423.0&gt;-&lt;316.0,418.0&gt;&gt;/B&lt;&lt;316.0,418.0&gt;-&lt;289.0,434.0&gt;-&lt;289.0,465.0&gt;&gt; = 13.296643320791533
+
+* w (U+0077): B&lt;&lt;345.0,410.0&gt;-&lt;338.0,410.0&gt;-&lt;331.0,412.0&gt;&gt;/B&lt;&lt;331.0,412.0&gt;-&lt;340.0,407.0&gt;-&lt;345.0,398.0&gt;&gt; = 13.109208198154267
+
+* wacute (U+1E83): B&lt;&lt;285.0,411.5&gt;-&lt;300.0,423.0&gt;-&lt;316.0,418.0&gt;&gt;/B&lt;&lt;316.0,418.0&gt;-&lt;289.0,434.0&gt;-&lt;289.0,465.0&gt;&gt; = 13.296643320791533
+
+* wacute (U+1E83): B&lt;&lt;345.0,410.0&gt;-&lt;338.0,410.0&gt;-&lt;331.0,412.0&gt;&gt;/B&lt;&lt;331.0,412.0&gt;-&lt;340.0,407.0&gt;-&lt;345.0,398.0&gt;&gt; = 13.109208198154267
+
+* wcircumflex (U+0175): B&lt;&lt;285.0,411.5&gt;-&lt;300.0,423.0&gt;-&lt;316.0,418.0&gt;&gt;/B&lt;&lt;316.0,418.0&gt;-&lt;289.0,434.0&gt;-&lt;289.0,465.0&gt;&gt; = 13.296643320791533
+
+* wcircumflex (U+0175): B&lt;&lt;345.0,410.0&gt;-&lt;338.0,410.0&gt;-&lt;331.0,412.0&gt;&gt;/B&lt;&lt;331.0,412.0&gt;-&lt;340.0,407.0&gt;-&lt;345.0,398.0&gt;&gt; = 13.109208198154267
+
+* wdieresis (U+1E85): B&lt;&lt;285.0,411.5&gt;-&lt;300.0,423.0&gt;-&lt;316.0,418.0&gt;&gt;/B&lt;&lt;316.0,418.0&gt;-&lt;289.0,434.0&gt;-&lt;289.0,465.0&gt;&gt; = 13.296643320791533
+
+* wdieresis (U+1E85): B&lt;&lt;345.0,410.0&gt;-&lt;338.0,410.0&gt;-&lt;331.0,412.0&gt;&gt;/B&lt;&lt;331.0,412.0&gt;-&lt;340.0,407.0&gt;-&lt;345.0,398.0&gt;&gt; = 13.109208198154267
+
+* wgrave (U+1E81): B&lt;&lt;285.0,411.5&gt;-&lt;300.0,423.0&gt;-&lt;316.0,418.0&gt;&gt;/B&lt;&lt;316.0,418.0&gt;-&lt;289.0,434.0&gt;-&lt;289.0,465.0&gt;&gt; = 13.296643320791533
+
+* wgrave (U+1E81): B&lt;&lt;345.0,410.0&gt;-&lt;338.0,410.0&gt;-&lt;331.0,412.0&gt;&gt;/B&lt;&lt;331.0,412.0&gt;-&lt;340.0,407.0&gt;-&lt;345.0,398.0&gt;&gt; = 13.109208198154267
+
+* y (U+0079): B&lt;&lt;221.0,410.0&gt;-&lt;209.0,410.0&gt;-&lt;188.0,414.0&gt;&gt;/B&lt;&lt;188.0,414.0&gt;-&lt;207.0,408.0&gt;-&lt;216.0,392.0&gt;&gt; = 6.741270506160247
+
+* y (U+0079): B&lt;&lt;260.5,283.5&gt;-&lt;255.0,263.0&gt;-&lt;237.0,253.0&gt;&gt;/B&lt;&lt;237.0,253.0&gt;-&lt;255.0,264.0&gt;-&lt;275.5,259.0&gt;&gt; = 2.374961515761332
+
+* y (U+0079): B&lt;&lt;425.5,259.0&gt;-&lt;446.0,264.0&gt;-&lt;464.0,253.0&gt;&gt;/B&lt;&lt;464.0,253.0&gt;-&lt;445.0,263.0&gt;-&lt;440.0,283.5&gt;&gt; = 3.6710250137784786
+
+* y (U+0079): B&lt;&lt;484.0,392.0&gt;-&lt;493.0,407.0&gt;-&lt;510.0,413.0&gt;&gt;/B&lt;&lt;510.0,413.0&gt;-&lt;492.0,410.0&gt;-&lt;481.0,410.0&gt;&gt; = 9.97771262015058
+
+* yacute (U+00FD): B&lt;&lt;221.0,410.0&gt;-&lt;209.0,410.0&gt;-&lt;188.0,414.0&gt;&gt;/B&lt;&lt;188.0,414.0&gt;-&lt;207.0,408.0&gt;-&lt;216.0,392.0&gt;&gt; = 6.741270506160247
+
+* yacute (U+00FD): B&lt;&lt;260.5,283.5&gt;-&lt;255.0,263.0&gt;-&lt;237.0,253.0&gt;&gt;/B&lt;&lt;237.0,253.0&gt;-&lt;255.0,264.0&gt;-&lt;275.5,259.0&gt;&gt; = 2.374961515761332
+
+* yacute (U+00FD): B&lt;&lt;425.5,259.0&gt;-&lt;446.0,264.0&gt;-&lt;464.0,253.0&gt;&gt;/B&lt;&lt;464.0,253.0&gt;-&lt;445.0,263.0&gt;-&lt;440.0,283.5&gt;&gt; = 3.6710250137784786
+
+* yacute (U+00FD): B&lt;&lt;484.0,392.0&gt;-&lt;493.0,407.0&gt;-&lt;510.0,413.0&gt;&gt;/B&lt;&lt;510.0,413.0&gt;-&lt;492.0,410.0&gt;-&lt;481.0,410.0&gt;&gt; = 9.97771262015058
+
+* ycircumflex (U+0177): B&lt;&lt;221.0,410.0&gt;-&lt;209.0,410.0&gt;-&lt;188.0,414.0&gt;&gt;/B&lt;&lt;188.0,414.0&gt;-&lt;207.0,408.0&gt;-&lt;216.0,392.0&gt;&gt; = 6.741270506160247
+
+* ycircumflex (U+0177): B&lt;&lt;260.5,283.5&gt;-&lt;255.0,263.0&gt;-&lt;237.0,253.0&gt;&gt;/B&lt;&lt;237.0,253.0&gt;-&lt;255.0,264.0&gt;-&lt;275.5,259.0&gt;&gt; = 2.374961515761332
+
+* ycircumflex (U+0177): B&lt;&lt;425.5,259.0&gt;-&lt;446.0,264.0&gt;-&lt;464.0,253.0&gt;&gt;/B&lt;&lt;464.0,253.0&gt;-&lt;445.0,263.0&gt;-&lt;440.0,283.5&gt;&gt; = 3.6710250137784786
+
+* ycircumflex (U+0177): B&lt;&lt;484.0,392.0&gt;-&lt;493.0,407.0&gt;-&lt;510.0,413.0&gt;&gt;/B&lt;&lt;510.0,413.0&gt;-&lt;492.0,410.0&gt;-&lt;481.0,410.0&gt;&gt; = 9.97771262015058
+
+* ydieresis (U+00FF): B&lt;&lt;221.0,410.0&gt;-&lt;209.0,410.0&gt;-&lt;188.0,414.0&gt;&gt;/B&lt;&lt;188.0,414.0&gt;-&lt;207.0,408.0&gt;-&lt;216.0,392.0&gt;&gt; = 6.741270506160247
+
+* ydieresis (U+00FF): B&lt;&lt;260.5,283.5&gt;-&lt;255.0,263.0&gt;-&lt;237.0,253.0&gt;&gt;/B&lt;&lt;237.0,253.0&gt;-&lt;255.0,264.0&gt;-&lt;275.5,259.0&gt;&gt; = 2.374961515761332
+
+* ydieresis (U+00FF): B&lt;&lt;425.5,259.0&gt;-&lt;446.0,264.0&gt;-&lt;464.0,253.0&gt;&gt;/B&lt;&lt;464.0,253.0&gt;-&lt;445.0,263.0&gt;-&lt;440.0,283.5&gt;&gt; = 3.6710250137784786
+
+* ydieresis (U+00FF): B&lt;&lt;484.0,392.0&gt;-&lt;493.0,407.0&gt;-&lt;510.0,413.0&gt;&gt;/B&lt;&lt;510.0,413.0&gt;-&lt;492.0,410.0&gt;-&lt;481.0,410.0&gt;&gt; = 9.97771262015058
+
+* ygrave (U+1EF3): B&lt;&lt;221.0,410.0&gt;-&lt;209.0,410.0&gt;-&lt;188.0,414.0&gt;&gt;/B&lt;&lt;188.0,414.0&gt;-&lt;207.0,408.0&gt;-&lt;216.0,392.0&gt;&gt; = 6.741270506160247
+
+* ygrave (U+1EF3): B&lt;&lt;260.5,283.5&gt;-&lt;255.0,263.0&gt;-&lt;237.0,253.0&gt;&gt;/B&lt;&lt;237.0,253.0&gt;-&lt;255.0,264.0&gt;-&lt;275.5,259.0&gt;&gt; = 2.374961515761332
+
+* ygrave (U+1EF3): B&lt;&lt;425.5,259.0&gt;-&lt;446.0,264.0&gt;-&lt;464.0,253.0&gt;&gt;/B&lt;&lt;464.0,253.0&gt;-&lt;445.0,263.0&gt;-&lt;440.0,283.5&gt;&gt; = 3.6710250137784786 
+
+* ygrave (U+1EF3): B&lt;&lt;484.0,392.0&gt;-&lt;493.0,407.0&gt;-&lt;510.0,413.0&gt;&gt;/B&lt;&lt;510.0,413.0&gt;-&lt;492.0,410.0&gt;-&lt;481.0,410.0&gt;&gt; = 9.97771262015058 [code: found-jaggy-segments]
+</code></pre>
+</span></li></ul></div></details>
+                    </body>
+                </html>
