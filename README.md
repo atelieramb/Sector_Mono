@@ -1,7 +1,7 @@
 ----
 
 
-# My Font
+# Sector Mono
 
 [![][Fontbakery]](https://atelieramb.github.io/Sector_Mono.git/fontbakery/fontbakery-report.html)
 [![][Universal]](https://atelieramb.github.io/Sector_Mono.git/fontbakery/fontbakery-report.html)
