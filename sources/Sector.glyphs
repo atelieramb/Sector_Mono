@@ -7,9 +7,8 @@ qy,
 " ",
 "/idotaccent",
 "ÓÔÖÒŐŌØÕŒPÞQRŔŘŖSŚꞋŠŞȘẞTŤŢȚUÚÛÜÙ",
-"Minimum
-Hamburgers
-fontsiv"
+"Å",
+"ŕE"
 );
 customParameters = (
 {
@@ -65,29 +64,76 @@ name = Languagesystems;
 features = (
 {
 automatic = 1;
-code = "feature salt;
-feature ss01;
-feature ss02;";
+code = "feature ss01;
+feature ss02;
+feature locl;
+";
 tag = aalt;
 },
 {
-automatic = 1;
 code = "lookup ccmp_Other_1 {
 	@CombiningTopAccents = [acutecomb circumflexcomb dieresiscomb dotaccentcomb gravecomb ringcomb tildecomb];
 	@CombiningNonTopAccents = [cedillacomb];
 	sub [i]' @CombiningTopAccents by [idotless];
 	sub [i]' @CombiningNonTopAccents @CombiningTopAccents by [idotless];
-} ccmp_Other_1;";
+} ccmp_Other_1;
+
+@COMBINING_TOP_MARKS = [gravecomb acutecomb circumflexcomb tildecomb macroncomb brevecomb dotaccentcomb caroncomb ringcomb]; # etc.
+
+feature ccmp {
+    lookup ccmp_soft_dotted {
+        lookupflag UseMarkFilteringSet @COMBINING_TOP_MARKS;
+        sub [i j]' @COMBINING_TOP_MARKS by [idotless jdotless];
+        # for istroke, jstroke, imod or others substitute for dotless glyphs
+        # etc.
+    } ccmp_soft_dotted;
+} ccmp;
+";
 tag = ccmp;
 },
 {
 automatic = 1;
-code = "sub O by O.ss01;";
-tag = salt;
+code = "lookup locl_latn_0 {
+	script latn;
+	language AZE;
+	sub i by idotaccent;
+	language CRT;
+	sub i by idotaccent;
+	language KAZ;
+	sub i by idotaccent;
+	language TAT;
+	sub i by idotaccent;
+	language TRK;
+	sub i by idotaccent;
+} locl_latn_0;
+
+lookup locl_latn_1 {
+	script latn;
+	language ROM;
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+	language MOL;
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+} locl_latn_1;
+
+lookup locl_latn_2 {
+	script latn;
+	language NLD;
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_2;
+";
+tag = locl;
 },
 {
 automatic = 1;
-code = "sub O by O.ss01;";
+code = "sub O by O.ss01;
+";
 labels = (
 {
 language = dflt;
@@ -98,7 +144,8 @@ tag = ss01;
 },
 {
 automatic = 1;
-code = "sub O by O.ss02;";
+code = "sub O by O.ss02;
+";
 labels = (
 {
 language = dflt;
@@ -113,7 +160,7 @@ fontMaster = (
 customParameters = (
 {
 name = typoAscender;
-value = 680;
+value = 869;
 },
 {
 name = typoLineGap;
@@ -121,15 +168,15 @@ value = 0;
 },
 {
 name = typoDescender;
-value = -240;
+value = -262;
 },
 {
 name = hheaAscender;
-value = 680;
+value = 869;
 },
 {
 name = hheaDescender;
-value = -240;
+value = -262;
 },
 {
 name = hheaLineGap;
@@ -159,12 +206,15 @@ pos = (301,570);
 },
 {
 pos = (563,350);
+},
+{
+pos = (409,869);
 }
 );
 id = "C8365536-00F6-4CBD-B31D-2172D190A829";
 metricValues = (
 {
-pos = 680;
+pos = 869;
 },
 {
 pos = 680;
@@ -175,7 +225,7 @@ pos = 520;
 {
 },
 {
-pos = -240;
+pos = -262;
 }
 );
 name = Regular;
@@ -749,7 +799,7 @@ unicode = 260;
 },
 {
 glyphname = Aring;
-lastChange = "2020-12-25 14:37:29 +0000";
+lastChange = "2023-07-28 14:33:25 +0000";
 layers = (
 {
 layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
@@ -758,6 +808,7 @@ shapes = (
 ref = A;
 },
 {
+pos = (-3,0);
 ref = ringcomb;
 }
 );
