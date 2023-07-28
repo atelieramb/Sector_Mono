@@ -2,7 +2,7 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[14] Sector-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+<details><summary><b>[13] Sector-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
 
 
 * 🔥 **FAIL** First line in license file is:
@@ -21,22 +21,17 @@ But instead we have got:
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 920 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1131 when it should be at least 1200 [code: bad-hhea-range]
 </div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Sector-Regular.ttf']. [code: missing-os2-fsselection-bit7]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 869, but got 680 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 262, but got 240 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĭ ǐ i̒ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĭ̧ i̧̋ ǐ̧ i̧̒ ĵ j̆ j̇ j̊ j̋ ǰ j̒ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: ĭ i̇ ǐ i̒ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ j̆ j̇ j̊ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
@@ -54,12 +49,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- i.loclTRK
-
-	- uni004A0301
-
-	- uni006A0301 
 
 	- uni030C.alt
  [code: unreachable-glyphs]
@@ -180,13 +169,13 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
-	* Aring (U+00C5): B<<339.0,858.0>-<348.0,849.0>-<349.0,837.0>>/B<<349.0,837.0>-<350.0,849.0>-<359.0,858.0>> = 9.527283381452328
+	* Aring (U+00C5): B<<336.0,858.0>-<345.0,849.0>-<346.0,837.0>>/B<<346.0,837.0>-<347.0,849.0>-<356.0,858.0>> = 9.527283381452328
 
-	* Aring (U+00C5): B<<341.0,777.0>-<350.0,768.0>-<351.0,756.0>>/B<<351.0,756.0>-<352.0,768.0>-<361.0,777.0>> = 9.527283381452328
+	* Aring (U+00C5): B<<338.0,777.0>-<347.0,768.0>-<348.0,756.0>>/B<<348.0,756.0>-<349.0,768.0>-<358.0,777.0>> = 9.527283381452328
 
-	* Aring (U+00C5): B<<359.0,811.0>-<350.0,820.0>-<349.0,832.0>>/B<<349.0,832.0>-<348.0,820.0>-<339.0,811.0>> = 9.527283381452328
+	* Aring (U+00C5): B<<356.0,811.0>-<347.0,820.0>-<346.0,832.0>>/B<<346.0,832.0>-<345.0,820.0>-<336.0,811.0>> = 9.527283381452328
 
-	* Aring (U+00C5): B<<361.0,730.0>-<352.0,739.0>-<351.0,751.0>>/B<<351.0,751.0>-<350.0,739.0>-<341.0,730.0>> = 9.527283381452328
+	* Aring (U+00C5): B<<358.0,730.0>-<349.0,739.0>-<348.0,751.0>>/B<<348.0,751.0>-<347.0,739.0>-<338.0,730.0>> = 9.527283381452328
 
 	* Uring (U+016E): B<<339.0,858.0>-<348.0,849.0>-<349.0,837.0>>/B<<349.0,837.0>-<350.0,849.0>-<359.0,858.0>> = 9.527283381452328
 
@@ -347,8 +336,8 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 8 | 121 | 7 | 104 | 0 |
-| 0% | 2% | 3% | 49% | 3% | 42% | 0% |
+| 0 | 5 | 8 | 121 | 7 | 105 | 0 |
+| 0% | 2% | 3% | 49% | 3% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

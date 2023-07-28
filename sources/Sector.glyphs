@@ -51,9 +51,13 @@ value = (
 {
 name = vendorID;
 value = "";
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
-date = "2023-07-28 09:34:52 +0000";
+date = "2023-07-28 14:55:40 +0000";
 familyName = Sector;
 featurePrefixes = (
 {
@@ -153,20 +157,20 @@ name = typoAscender;
 value = 869;
 },
 {
-name = typoLineGap;
-value = 0;
+name = hheaAscender;
+value = 869;
 },
 {
 name = typoDescender;
 value = -262;
 },
 {
-name = hheaAscender;
-value = 869;
-},
-{
 name = hheaDescender;
 value = -262;
+},
+{
+name = typoLineGap;
+value = 0;
 },
 {
 name = hheaLineGap;
@@ -54474,21 +54478,12 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 {
 key = licenseURL;
 value = "http://scripts.sil.org/OFL";
-},
-{
-key = copyrights;
-values = (
-{
-language = ENG;
-value = "Copyright 2023 The Sector Project Author (https://github.com/atelieramb/Sector_Mono)";
-}
-);
 }
 );
 settings = {
 disablesAutomaticAlignment = 1;
 };
-unitsPerEm = 1000;
+unitsPerEm = 1200;
 userData = {
 UFO.lib = {
 public.postscriptNames = {
@@ -54537,5 +54532,5 @@ upDownArrow = arrowupdn;
 UFOFormat = 3;
 };
 versionMajor = 2;
-versionMinor = 3;
+versionMinor = 4;
 }
