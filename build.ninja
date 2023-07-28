@@ -5,11 +5,11 @@ rule proofing
       "$characters" --filter-styles "$filters"
 
 # Build rules
-build out/proof/Normal: proofing
+build out/proof/Regular: proofing
   fonts = $
-      "/Users/mateobroillet/Documents/GitHub/Sector_Mono/fonts/ttf/Sector-Normal.ttf"
+      "/Users/mateobroillet/Documents/GitHub/Sector_Mono/fonts/ttf/Sector-Regular.ttf"
   styles = instances
   out = out/diffbrowsers
   pt_size = 20
   characters = .*
-  filters = Normal
+  filters = Regular
