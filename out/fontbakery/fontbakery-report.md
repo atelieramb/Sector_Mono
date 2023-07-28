@@ -2,72 +2,18 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[15] Sector-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+<details><summary><b>[14] Sector-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
 
-	- 0x010A (LATIN CAPITAL LETTER C WITH DOT ABOVE)
-
-
-	- 0x011E (LATIN CAPITAL LETTER G WITH BREVE)
-
-
-	- 0x0120 (LATIN CAPITAL LETTER G WITH DOT ABOVE)
-
-
-	- 0x0126 (LATIN CAPITAL LETTER H WITH STROKE)
-
-
-	- 0x0132 (LATIN CAPITAL LIGATURE IJ)
-
-
-	- 0x0130 (LATIN CAPITAL LETTER I WITH DOT ABOVE)
-
-
 	- 0x014A (LATIN CAPITAL LETTER ENG)
-
-
-	- 0x0218 (LATIN CAPITAL LETTER S WITH COMMA BELOW)
-
-
-	- 0x021A (LATIN CAPITAL LETTER T WITH COMMA BELOW)
 
 
 	- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
 
 
-	- 0x010B (LATIN SMALL LETTER C WITH DOT ABOVE)
-
-
-	- 0x00F0 (LATIN SMALL LETTER ETH)
-
-
-	- 0x011F (LATIN SMALL LETTER G WITH BREVE)
-
-
-	- 0x0121 (LATIN SMALL LETTER G WITH DOT ABOVE)
-
-
-	- 0x0127 (LATIN SMALL LETTER H WITH STROKE)
-
-
-	- 0x0133 (LATIN SMALL LIGATURE IJ)
-
-
-	- 0x0237 (LATIN SMALL LETTER DOTLESS J)
-
-
 	- 0x014B (LATIN SMALL LETTER ENG)
-
-
-	- 0x0219 (LATIN SMALL LETTER S WITH COMMA BELOW)
-
-
-	- 0x00DF (LATIN SMALL LETTER SHARP S)
-
-
-	- 0x021B (LATIN SMALL LETTER T WITH COMMA BELOW)
  
 
 	- 0x016D (LATIN SMALL LETTER U WITH BREVE)
@@ -82,12 +28,6 @@ Fontbakery version: 0.8.13
 which does not match the expected format, similar to:
 
 "Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
-</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
-
-
-* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
-But instead we have got:
-"Copyright 2023 Sector Project Authors (https://github.com/atelieramb/Sector_Mono)" [code: bad-notice-format]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
@@ -106,7 +46,7 @@ But instead we have got:
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĭ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĭ̧ i̧̋ ǐ̧ i̧̒ ĵ j̆ j̇ j̊ j̋ ǰ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: ĭ ǐ i̒ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĭ̧ i̧̋ ǐ̧ i̧̒ ĵ j̆ j̇ j̊ j̋ ǰ j̒ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
@@ -124,6 +64,12 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+
+	- i.loclTRK
+
+	- uni004A0301
+
+	- uni006A0301 
 
 	- uni030C.alt
  [code: unreachable-glyphs]
@@ -150,6 +96,10 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: newGlyph.001	Contours detected: 0	Expected: 2 or 3
 
+	- Glyph name: germandbls	Contours detected: 0	Expected: 1
+
+	- Glyph name: eth	Contours detected: 0	Expected: 2
+
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
 	- Glyph name: eogonek	Contours detected: 3	Expected: 2
@@ -174,7 +124,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: wdieresis	Contours detected: 6	Expected: 3
 
-	- Glyph name: uni1E9E	Contours detected: 2	Expected: 1
+	- Glyph name: uni1E9E	Contours detected: 0	Expected: 1
 
 	- Glyph name: arrowboth	Contours detected: 2	Expected: 1
 
@@ -208,9 +158,13 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: eogonek	Contours detected: 3	Expected: 2
 
+	- Glyph name: eth	Contours detected: 0	Expected: 2
+
+	- Glyph name: germandbls	Contours detected: 0	Expected: 1
+
 	- Glyph name: infinity	Contours detected: 4	Expected: 3
 
-	- Glyph name: uni1E9E	Contours detected: 2	Expected: 1
+	- Glyph name: uni1E9E	Contours detected: 0	Expected: 1
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
 
@@ -233,7 +187,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 345 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 378 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
@@ -294,13 +248,13 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 
 	* Zdotaccent (U+017B): B<<208.0,124.0>-<196.0,110.0>-<177.0,106.0>>/B<<177.0,106.0>-<180.0,106.0>-<184.0,105.0>> = 11.888658039627968
 
-	* aring (U+00E5): B<<339.0,672.0>-<348.0,663.0>-<349.0,651.0>>/B<<349.0,651.0>-<350.0,663.0>-<359.0,672.0>> = 9.527283381452328
+	* aring (U+00E5): B<<339.0,706.0>-<348.0,697.0>-<349.0,685.0>>/B<<349.0,685.0>-<350.0,697.0>-<359.0,706.0>> = 9.527283381452328
 
-	* aring (U+00E5): B<<341.0,591.0>-<350.0,582.0>-<351.0,570.0>>/B<<351.0,570.0>-<352.0,582.0>-<361.0,591.0>> = 9.527283381452328
+	* aring (U+00E5): B<<341.0,625.0>-<350.0,616.0>-<351.0,604.0>>/B<<351.0,604.0>-<352.0,616.0>-<361.0,625.0>> = 9.527283381452328
 
-	* aring (U+00E5): B<<359.0,625.0>-<350.0,634.0>-<349.0,646.0>>/B<<349.0,646.0>-<348.0,634.0>-<339.0,625.0>> = 9.527283381452328
+	* aring (U+00E5): B<<359.0,659.0>-<350.0,668.0>-<349.0,680.0>>/B<<349.0,680.0>-<348.0,668.0>-<339.0,659.0>> = 9.527283381452328
 
-	* aring (U+00E5): B<<361.0,544.0>-<352.0,553.0>-<351.0,565.0>>/B<<351.0,565.0>-<350.0,553.0>-<341.0,544.0>> = 9.527283381452328
+	* aring (U+00E5): B<<361.0,578.0>-<352.0,587.0>-<351.0,599.0>>/B<<351.0,599.0>-<350.0,587.0>-<341.0,578.0>> = 9.527283381452328
 
 	* ring (U+02DA): B<<339.0,672.0>-<348.0,663.0>-<349.0,651.0>>/B<<349.0,651.0>-<350.0,663.0>-<359.0,672.0>> = 9.527283381452328
 
@@ -317,6 +271,14 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 	* uni030A (U+030A): B<<359.0,811.0>-<350.0,820.0>-<349.0,832.0>>/B<<349.0,832.0>-<348.0,820.0>-<339.0,811.0>> = 9.527283381452328
 
 	* uni030A (U+030A): B<<361.0,730.0>-<352.0,739.0>-<351.0,751.0>>/B<<351.0,751.0>-<350.0,739.0>-<341.0,730.0>> = 9.527283381452328
+
+	* uni1EF9 (U+1EF9): B<<221.0,410.0>-<209.0,410.0>-<188.0,414.0>>/B<<188.0,414.0>-<207.0,408.0>-<216.0,392.0>> = 6.741270506160247
+
+	* uni1EF9 (U+1EF9): B<<260.5,283.5>-<255.0,263.0>-<237.0,253.0>>/B<<237.0,253.0>-<255.0,264.0>-<275.5,259.0>> = 2.374961515761332
+
+	* uni1EF9 (U+1EF9): B<<425.5,259.0>-<446.0,264.0>-<464.0,253.0>>/B<<464.0,253.0>-<445.0,263.0>-<440.0,283.5>> = 3.6710250137784786
+
+	* uni1EF9 (U+1EF9): B<<484.0,392.0>-<493.0,407.0>-<510.0,413.0>>/B<<510.0,413.0>-<492.0,410.0>-<481.0,410.0>> = 9.97771262015058
 
 	* uring (U+016F): B<<339.0,708.0>-<348.0,699.0>-<349.0,687.0>>/B<<349.0,687.0>-<350.0,699.0>-<359.0,708.0>> = 9.527283381452328
 
@@ -399,8 +361,8 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 7 | 8 | 121 | 7 | 103 | 0 |
-| 0% | 3% | 3% | 49% | 3% | 42% | 0% |
+| 0 | 6 | 8 | 121 | 7 | 104 | 0 |
+| 0% | 2% | 3% | 49% | 3% | 42% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
