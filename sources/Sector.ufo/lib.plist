@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>com.schriftgestaltung.DisplayStrings</key>
+	<array>
+		<string>T™M</string>
+		<string>y</string>
+	</array>
 	<key>com.schriftgestaltung.disablesAutomaticAlignment</key>
 	<true/>
 	<key>com.schriftgestaltung.font.customParameters</key>
@@ -12,6 +17,12 @@
 			<key>value</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>isFixedPitch</string>
+			<key>value</key>
+			<true/>
+		</dict>
 	</array>
 	<key>com.schriftgestaltung.fontMasterID</key>
 	<string>C8365536-00F6-4CBD-B31D-2172D190A829</string>
@@ -21,8 +32,6 @@
 	<string>Normal</string>
 	<key>com.schriftgestaltung.useNiceNames</key>
 	<true/>
-	<key>com.schriftgestaltung.weightValue</key>
-	<integer>100</integer>
 	<key>public.glyphOrder</key>
 	<array>
 		<string>A</string>

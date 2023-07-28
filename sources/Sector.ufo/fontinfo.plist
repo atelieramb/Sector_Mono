@@ -7,7 +7,7 @@
 	<key>capHeight</key>
 	<integer>680</integer>
 	<key>copyright</key>
-	<string>Created in 2020 for Juan Arturo García, updated in 2022. SIL Open Font License.</string>
+	<string>This font software is licensed under the sil open font license, version 1.1</string>
 	<key>descender</key>
 	<integer>-240</integer>
 	<key>familyName</key>
@@ -61,12 +61,29 @@
 	<string>Mateo Broillet</string>
 	<key>openTypeNameDesignerURL</key>
 	<string>www.mateobroillet.ch</string>
+	<key>openTypeNameLicense</key>
+	<string>This font software is licensed under the sil open font license, version 1.1</string>
 	<key>openTypeNameManufacturer</key>
 	<string>Atelier AMB, Mateo Broillet</string>
 	<key>openTypeNameManufacturerURL</key>
 	<string>www.mateobroillet.ch</string>
 	<key>openTypeNamePreferredSubfamilyName</key>
 	<string>Mono</string>
+	<key>openTypeOS2Panose</key>
+	<array>
+		<integer>2</integer>
+		<integer>9</integer>
+		<integer>5</integer>
+		<integer>3</integer>
+		<integer>6</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>8</integer>
+		<integer>3</integer>
+		<integer>3</integer>
+	</array>
+	<key>openTypeOS2VendorID</key>
+	<string>Mateo Broillet</string>
 	<key>openTypeOS2WeightClass</key>
 	<integer>400</integer>
 	<key>openTypeOS2WidthClass</key>
