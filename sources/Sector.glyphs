@@ -129,10 +129,6 @@ value = -240;
 {
 name = hheaLineGap;
 value = 0;
-},
-{
-name = typoAscender;
-value = 680;
 }
 );
 guides = (
