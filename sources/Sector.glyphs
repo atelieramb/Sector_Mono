@@ -54478,12 +54478,21 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 {
 key = licenseURL;
 value = "http://scripts.sil.org/OFL";
+},
+{
+key = copyrights;
+values = (
+{
+language = ENG;
+value = "Copyright 2023 The Sector Project Authors (https://github.com/atelieramb/Sector_Mono)";
+}
+);
 }
 );
 settings = {
 disablesAutomaticAlignment = 1;
 };
-unitsPerEm = 1200;
+unitsPerEm = 1000;
 userData = {
 UFO.lib = {
 public.postscriptNames = {
