@@ -2,23 +2,7 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[14] Sector-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x014A (LATIN CAPITAL LETTER ENG)
-
-
-	- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
-
-
-	- 0x014B (LATIN SMALL LETTER ENG)
- 
-
-	- 0x016D (LATIN SMALL LETTER U WITH BREVE)
- [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+<details><summary><b>[13] Sector-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
 
 
 * 🔥 **FAIL** First line in license file is:
@@ -96,9 +80,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: newGlyph.001	Contours detected: 0	Expected: 2 or 3
 
-	- Glyph name: germandbls	Contours detected: 0	Expected: 1
-
-	- Glyph name: eth	Contours detected: 0	Expected: 2
+	- Glyph name: germandbls	Contours detected: 2	Expected: 1
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -124,7 +106,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: wdieresis	Contours detected: 6	Expected: 3
 
-	- Glyph name: uni1E9E	Contours detected: 0	Expected: 1
+	- Glyph name: uni1E9E	Contours detected: 2	Expected: 1
 
 	- Glyph name: arrowboth	Contours detected: 2	Expected: 1
 
@@ -158,13 +140,11 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: eogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: eth	Contours detected: 0	Expected: 2
-
-	- Glyph name: germandbls	Contours detected: 0	Expected: 1
+	- Glyph name: germandbls	Contours detected: 2	Expected: 1
 
 	- Glyph name: infinity	Contours detected: 4	Expected: 3
 
-	- Glyph name: uni1E9E	Contours detected: 0	Expected: 1
+	- Glyph name: uni1E9E	Contours detected: 2	Expected: 1
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
 
@@ -187,7 +167,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
 
 
-* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 378 instead.
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 382 instead.
 Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
@@ -361,8 +341,8 @@ Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 8 | 121 | 7 | 104 | 0 |
-| 0% | 2% | 3% | 49% | 3% | 42% | 0% |
+| 0 | 5 | 8 | 121 | 7 | 105 | 0 |
+| 0% | 2% | 3% | 49% | 3% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
