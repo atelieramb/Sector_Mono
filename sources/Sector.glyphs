@@ -2,8 +2,10 @@
 .appVersion = "3151";
 .formatVersion = 3;
 DisplayStrings = (
-"T™M",
-y
+xjapan,
+qy,
+" ",
+"sdį"
 );
 customParameters = (
 {
@@ -18,9 +20,9 @@ value = 1;
 name = panose;
 value = (
 2,
+0,
 1,
-1,
-1,
+9,
 1,
 1,
 1,
@@ -48,7 +50,7 @@ name = vendorID;
 value = "";
 }
 );
-date = "2023-07-28 08:19:50 +0000";
+date = "2023-07-28 09:09:04 +0000";
 familyName = Sector;
 featurePrefixes = (
 {
@@ -82,16 +84,54 @@ tag = salt;
 {
 automatic = 1;
 code = "sub O by O.ss01;";
+labels = (
+{
+language = dflt;
+value = Alternate;
+}
+);
 tag = ss01;
 },
 {
 automatic = 1;
 code = "sub O by O.ss02;";
+labels = (
+{
+language = dflt;
+value = Alternate_II;
+}
+);
 tag = ss02;
 }
 );
 fontMaster = (
 {
+customParameters = (
+{
+name = typoAscender;
+value = 680;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = typoDescender;
+value = -240;
+},
+{
+name = hheaAscender;
+value = 680;
+},
+{
+name = hheaDescender;
+value = -240;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 guides = (
 {
 pos = (428,-89);
@@ -112,26 +152,21 @@ pos = (563,350);
 id = "C8365536-00F6-4CBD-B31D-2172D190A829";
 metricValues = (
 {
-over = 16;
 pos = 680;
 },
 {
-over = 16;
 pos = 680;
 },
 {
-over = 16;
 pos = 520;
 },
 {
-over = -16;
 },
 {
-over = -16;
 pos = -240;
 }
 );
-name = Normal;
+name = Regular;
 userData = {
 GSCornerRadius = 15;
 };
@@ -19375,7 +19410,7 @@ unicode = 303;
 },
 {
 glyphname = j;
-lastChange = "2020-12-10 18:03:03 +0000";
+lastChange = "2023-07-28 09:16:41 +0000";
 layers = (
 {
 guides = (
@@ -31520,6 +31555,138 @@ width = 700;
 unicode = 8260;
 },
 {
+glyphname = "space-han";
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 12288;
+},
+{
+glyphname = "mediumspace-math";
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8287;
+},
+{
+glyphname = emquad;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8193;
+},
+{
+glyphname = emspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8195;
+},
+{
+glyphname = enquad;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8192;
+},
+{
+glyphname = enspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8194;
+},
+{
+glyphname = figurespace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8199;
+},
+{
+glyphname = fourperemspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8197;
+},
+{
+glyphname = hairspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8202;
+},
+{
+glyphname = narrownbspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8239;
+},
+{
+glyphname = punctuationspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8200;
+},
+{
+glyphname = sixperemspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8198;
+},
+{
 glyphname = space;
 lastChange = "2020-12-10 17:58:16 +0000";
 layers = (
@@ -31529,6 +31696,50 @@ width = 700;
 }
 );
 unicode = 32;
+},
+{
+glyphname = nbspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 160;
+},
+{
+glyphname = thinspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8201;
+},
+{
+glyphname = threeperemspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8196;
+},
+{
+glyphname = zerowidthspace;
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+metricWidth = space;
+unicode = 8203;
 },
 {
 glyphname = period;
@@ -49168,6 +49379,28 @@ width = 700;
 }
 );
 unicode = 731;
+},
+{
+glyphname = newGlyph.001;
+lastChange = "2023-07-28 08:43:49 +0000";
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+unicode = 186;
+},
+{
+glyphname = newGlyph;
+lastChange = "2023-07-28 08:43:19 +0000";
+layers = (
+{
+layerId = "C8365536-00F6-4CBD-B31D-2172D190A829";
+width = 700;
+}
+);
+unicode = 170;
 }
 );
 instances = (
@@ -49237,7 +49470,7 @@ key = copyrights;
 values = (
 {
 language = ENG;
-value = "Copyright 2023 Sector, Mateo Broillet";
+value = "Copyright 2023 Sector Project Authors (https://github.com/atelieramb/Sector_Mono)";
 }
 );
 },
@@ -49250,7 +49483,7 @@ key = licenses;
 values = (
 {
 language = ENG;
-value = "This font software is licensed under the sil open font license, version 1.1";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
@@ -49262,6 +49495,10 @@ language = ENG;
 value = "Sector is a trademark of atelieramb";
 }
 );
+},
+{
+key = licenseURL;
+value = "http://scripts.sil.org/OFL";
 }
 );
 settings = {
